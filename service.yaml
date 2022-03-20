@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: knative-nodejs
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/jankaul/knative-nodejs
+          env:
+            - name: TARGET
+              value: "Node.js Sample v1"

@@ -1,0 +1,17 @@
+{
+  "name": "knative-nodejs",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "docker build -t jankaul/knative-nodejs .",
+    "push": "docker push jankaul/knative-nodejs"
+  },
+  "author": "Jan Kaul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
